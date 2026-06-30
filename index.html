@@ -452,6 +452,12 @@ section {
 
 .project-link::after { content: '→'; }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 .project-card.coming-soon {
   opacity: 0.4;
   cursor: default;
@@ -963,9 +969,9 @@ footer {
   <h2 class="section-title reveal">Tools I've built.<br>All open source.</h2>
   <div class="projects-grid">
 
-    <a href="https://github.com/mkilig/promptbreaker" target="_blank" class="project-card featured reveal">
+    <div class="project-card featured reveal">
       <div class="project-status">
-        <div class="status-dot dot-build"></div>
+        <div class="status-dot dot-live"></div>
         <span class="status-text">Live</span>
       </div>
       <div class="project-name">PromptBreaker</div>
@@ -983,8 +989,11 @@ footer {
     <span class="tag">REST API</span>
     <span class="tag">JavaScript</span>
   </div>
-      <span class="project-link">View on GitHub</span>
-    </a>
+      <div class="project-links">
+        <a href="https://promptbreaker-eight.vercel.app" target="_blank" class="project-link">Live Demo</a>
+        <a href="https://github.com/mkilig/promptbreaker" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+    </div>
 
     <a href="https://github.com/mkilic/threatnarrator" target="_blank" class="project-card reveal">
       <div class="project-status">
